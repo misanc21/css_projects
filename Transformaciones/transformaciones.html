@@ -8,8 +8,12 @@
     <title>Css Projects</title>
 </head>
 <body>
+    <nav>
+        <div class="logo">M21</div>
+        <span>Practica con CSS</span>
+    </nav>
     <h1>Transformaciones</h1>
-    <section class="text">
+    <main class="text">
         <p>
             Las transformaciones pueden ser de dos tipos, 2d y 3d.
             Para ambas tenemos una sola propiedad que recibe funciones como valor
@@ -59,14 +63,50 @@
                 </ul>
             </li>
         </ul>
+        <span>Todos las cajas tienen las siguientes clases</span>
+        <pre>
+            <code>
+                .box {
+                    width: 200px;
+                    height: 200px;
+                    background-color: royalblue;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 3rem;
+                    color: white;
+                }
+                
+                .box:hover {
+                    background-color: green;
+                    color: black;
+                
+                }
+            </code>
+        </pre>
         <hr>
-    </section>
-    <section class="boxes">
-        <!--div class="box">BOX</div-->
-    </section>
+        <section>
+            <h5>Ejemplo 1</h5>
+            <p>En este ejemplo se ocupó el translateX con un 25% de translacion, mas una transicion que apunta al transform</p>
+            <pre>
+                <code>
+                    #box-1 {
+                        transition: transform 0.5s;
+                    }
+                    
+                    #box-1:hover {
+                        transform: translateX(25%)
+                    }
+                </code>
+            </pre>
+        </section>
+        <section class="boxes">
+            <div class="box" id="box-1">BOX</div>
+        </section>
+    </main>
     <footer>
         <hr>
-        <span class="rights">Información obtenida de canal de youtube <a href="https://www.youtube.com/user/DorianDesigns">Dorian Designs</a></span>
+        <span class="rights">Información obtenida de canal de youtube <a href="https://www.youtube.com/user/DorianDesigns" target="_blank">Dorian Designs</a></span>
     </footer>
 </body>
 </html>

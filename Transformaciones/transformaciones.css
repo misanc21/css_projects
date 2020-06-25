@@ -10,5 +10,15 @@
 }
 
 .box:hover {
+    background-color: #ffffff;
+    color: royalblue;
 
+}
+
+#box-1 {
+    transition: transform 0.5s;
+}
+
+#box-1:hover {
+    transform: translateX(25%)
 }
