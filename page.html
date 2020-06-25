@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="page.css">
+    <title>Css Projects</title>
+</head>
+<body>
+    <h1>Trancisiones</h1>
+    <section class="text">
+        <p>Las Trancisiones necesitan un evento que las dispare, no se pueden ejecutar por si solas</p>
+        <p>Existen cuatro propiedades de las transciciones</p>
+        <ul>
+            <li>
+                <b>transition-property</b>
+                <p>Establece la propiedad que se va a animar, acepta los valores <b> all | none | propiedad [,propiedad]</b></p>
+            </li>
+            <li>
+                <b>transition-duration</b>
+                <p>Establece la duración de la transicion, si hubiera mas de una se ponen separadas por comas. Acepta valores en segundos "s" y en milisegundos "ms"</p>
+            </li>
+            <li>
+                <b>transition-delay</b>
+                <p>Establece el retraso que tendrá la transicion antes de empezar</p>
+            </li>
+            <li>
+                <b>transition-timing-function</b>
+                <p>Establece la forma en la que se movera la transcicion en cada una de las interpolaciones. Acepta valores: <b>ease | linear | ease-in | ease-out | ease-in-out | step-start | step-end | steps() | cubic-bezier()</ease-out></b></p>
+            </li>
+        </ul>
+        <hr>
+        <p>En este ejemplo se utilizan los siguientes campos</p>
+        <pre>
+            <code>
+                .box {
+                    width: 200px;
+                    height: 200px;
+                    background-color: royalblue;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 3rem;
+                    color: white;
+                
+                    transition-property: background-color, color;
+                    transition-duration: 2s;
+                    transition-delay: 0s, 1s;
+                }
+                
+                .box:hover {
+                    background-color: black;
+                    color: rgb(44, 43, 43)
+                }
+            </code>
+        </pre>
+    </section>
+    <section class="boxes">
+        <div class="box">BOX</div>
+    </section>
+</body>
+</html>
