@@ -103,6 +103,36 @@
         <section class="boxes">
             <div class="box" id="box-1">BOX</div>
         </section>
+        <section>
+            <h5>Ejemplo 2</h5>
+            <p>Tambien se puede usar el translate para mover los dos ejes en la misma linea:</p>
+            <pre>
+                <code>
+                    /* para box 2 valores positivos*/
+                    #box-2 {
+                        transition: transform 0.5s;
+                    }
+                    
+                    #box-2:hover {
+                        transform: translate(25%,35%)
+                    }
+
+
+                    /* para box 3 valores negativos*/
+                    #box-3 {
+                        transition: transform 1s;
+                    }
+                    
+                    #box-3:hover {
+                        transform: translate(-50%, -35%)
+                    }
+                </code>
+            </pre>
+        </section>
+        <section class="boxes">
+            <div class="box" id="box-2">BOX 2</div>
+            <div class="box" id="box-3">BOX 3</div>
+        </section>
     </main>
     <footer>
         <hr>

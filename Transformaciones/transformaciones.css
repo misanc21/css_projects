@@ -22,3 +22,19 @@
 #box-1:hover {
     transform: translateX(25%)
 }
+
+#box-2 {
+    transition: transform 0.5s;
+}
+
+#box-2:hover {
+    transform: translate(25%,35%)
+}
+
+#box-3 {
+    transition: transform 1s;
+}
+
+#box-3:hover {
+    transform: translate(-50%, -35%)
+}
